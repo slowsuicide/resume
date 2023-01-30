@@ -9,33 +9,33 @@ a {
   }
 
 
-.navigation{
+  .navigation {
     position: fixed;
-    max-width: 100%;
-    padding-top:20px;
-    height:50px;
     top: 0px;
-    background-color: white;;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 5px;
     z-index: 1;
     font-size: 22px;
-    border-bottom: 1px solid black;
-}
-
-.nav-info{
-    max-width: 1000px;
-    margin: 10px auto 0 auto;
-
-}
-
-.monitors{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.monitorLink{
-    transition-duration: .2s;
-    flex:1;
-    text-align: center;
 
+.monitors {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.monitorLink {
+    transition-duration: .2s;
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    
 }
 .monitorLink:hover{
     transition-duration: .2s;
@@ -47,8 +47,8 @@ a {
 
 .smartphones{
     display: none;
-    width: 50px;
-    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .smartphones img{
@@ -59,7 +59,7 @@ a {
 .mainPage{
     max-width: 1000px;
     margin: 0 auto;
-    margin-top:100px;
+    margin-top:50px;
     padding: 0 20px;
 }
 
@@ -177,12 +177,14 @@ a {
     .monitors{
         display: none;
     }
-        .smartphones{
-            margin: auto;
-            display: inline;
-        }
+     .smartphones{
+         display: flex;
+     }
     .homeInfo{
         display: block;
+    }
+    .home{
+        padding-bottom:30px;
     }
     .otherInfo{
         padding-left:0%;
