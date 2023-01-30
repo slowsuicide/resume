@@ -1,10 +1,7 @@
 html, body { 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
-    width: 1000px;
-    margin: auto;
-}
+
 
 a {
     color: black;
@@ -13,9 +10,9 @@ a {
 
 
 .navigation{
-    position:fixed;
+    position: fixed;
+    max-width: 100%;
     padding-top:20px;
-    width: 1000px;
     height:50px;
     top: 0px;
     background-color: white;;
@@ -24,6 +21,11 @@ a {
     border-bottom: 1px solid black;
 }
 
+.nav-info{
+    max-width: 1000px;
+    margin: 10px auto 0 auto;
+
+}
 
 .monitors{
     display: flex;
@@ -47,7 +49,6 @@ a {
     display: none;
     width: 50px;
     height: 50px;
-    text-align: center;
 }
 
 .smartphones img{
@@ -56,10 +57,19 @@ a {
 }
 
 .mainPage{
+    max-width: 1000px;
+    margin: 0 auto;
     margin-top:100px;
+    padding: 0 20px;
 }
 
-
+.home{
+    height: 100px;
+    display: flex;
+}
+.homeInfo{
+    width: 300px;
+}
 .otherInfo{
     font-size: 20px;
     font-weight: 300;
@@ -69,10 +79,10 @@ a {
 
 .myPhotos{
     border-radius: 25px;
-    width: 100%;
+    max-width: 100%;
     height: 450px;
     background-image: url('https://sun9-west.userapi.com/sun9-1/s/v1/ig2/Q_9aWNVqTEM_u2UNvrNR_IvdtH-Rk2R9FiSoXy0wy44SP73wKAWA6tRBzpDjoqcZA8995icNWY-mKIABbnnp1IXc.jpg?size=1280x974&quality=95&type=album');
-    background-position: center calc(35% - 10%);
+    background-position: center 25%;
     background-size: cover;
 }
 
@@ -142,6 +152,9 @@ a {
 
 
 @media(max-width:850px){
+    .resumePage{
+        width: 800px;
+    }
     .mySkills td{
         display:block;
     }
@@ -149,18 +162,18 @@ a {
 
 
 @media(max-width:650px){
-  .home{
-     display:flex;
-  }
-  .homeInfo{
-    display: inline;
-  }
+    .resumePage{
+        width: 650px;
+    }
   .myPhotos{
       height: 200px;
   }
 }
 
 @media(max-width:400px){
+    .resumePage{
+        width: 400px;
+    }
     .monitors{
         display: none;
     }
